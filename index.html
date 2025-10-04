@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flags_conturys</title>
+  </head>
+  <body class="h-screen dark:bg-gray-800">
+    <header
+      class="shadowborder flex justify-between items-center py-[30px] px-[60px] dark:bg-[#2B3945]"
+    >
+      <div>
+        <p class="dark:text-white text-[18px] font-medium">
+          where in the world?
+        </p>
+      </div>
+      <button id="showhide" class="flex items-center gap-2">
+        <svg
+          fill="#fff"
+          width="20px"
+          height="20px"
+          viewBox="0 0 36 36"
+          version="1.1"
+          preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>moon-solid</title>
+          <path
+            d="M29.2,26.72A12.07,12.07,0,0,1,22.9,4.44,13.68,13.68,0,0,0,19.49,4a14,14,0,0,0,0,28,13.82,13.82,0,0,0,10.9-5.34A11.71,11.71,0,0,1,29.2,26.72Z"
+            class="clr-i-solid clr-i-solid-path-1"
+          ></path>
+          <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+        </svg>
+        <svg id="moon" class="moon"
+          fill="#fff"
+          width="18px"
+          height="18px"
+          viewBox="0 0 36 36"
+          version="1.1"
+          preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>moon-line</title>
+          <path
+            d="M31,27.19a1,1,0,0,0-1-.56c-.28,0-.56,0-.85,0A11,11,0,0,1,24.92,5.61a1,1,0,0,0,.61-1,1,1,0,0,0-.67-.91,14.7,14.7,0,0,0-5-.87,15.12,15.12,0,0,0,0,30.24,14.78,14.78,0,0,0,11-4.81A1,1,0,0,0,31,27.19ZM19.89,31.12a13.12,13.12,0,0,1,0-26.24,11.81,11.81,0,0,1,2,.16,13,13,0,0,0,5.72,23.53A12.75,12.75,0,0,1,19.89,31.12Z"
+            class="clr-i-outline clr-i-outline-path-1"
+          ></path>
+          <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+        </svg>
+        <span class="dark:text-white text-[18px] font-medium">Light Mode</span>
+      </button>
+    </header>
+    <main>
+      <ul id="container" class="flex flex-wrap p-20">
+        <li
+          class="flex flex-col rounded-[6px] overflow-hidden hover:scale-105 dark:bg-[#2B3945]"
+        >
+          <img class="w-[260px] h-[160px]" src="src/imag/one.svg" />
+          <div class="flex flex-col gap-3 p-7">
+            <div class="dark:text-white text-[18px] font-medium">Lithuania</div>
+            <div class="flex flex-col gap-1">
+              <p class="dark:text-white text-[14px]">
+                Population:<span>2,794,700</span>
+              </p>
+              <p class="dark:text-white text-[14px]">
+                Region:<span>Europe</span>
+              </p>
+              <p class="dark:text-white text-[14px]">
+                Capital:<span>Vilnius</span>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

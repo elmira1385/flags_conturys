@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+.shadowborder {
+  --tw-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0562);
+  --tw-shadow-colored: 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+ var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
